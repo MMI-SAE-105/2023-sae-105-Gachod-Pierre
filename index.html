@@ -121,7 +121,8 @@
             </h3>
             <div class="overlay"
             x-show="displayedImage"
-            @click="displayedImage=null"></div>
+            @click="displayedImage=null"
+            @keyup.escape.window="displayedImage = null"></div>
 
         </section>
     </main>
