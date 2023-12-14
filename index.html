@@ -22,10 +22,10 @@
                 <img src="public/img/TADAO.svg" alt="Tadao logo" class="header__logo-img" />
             </a>
             
-            <button>
+            <button class="btn__tck">
                 <a href="#">
                     <img src="public/img/coupon.svg" alt="">
-                    réservez un billet
+                    Vôtre billet
                 </a>
             </button>
         </div>
@@ -39,10 +39,10 @@
     
         <h1 class="header__title">ÉVADEZ VOUS <br> EXPOSITION <br> TADAO</h1>
 
-        <button>
+        <button class="btn__tck">
             <a href="#">
                 <img src="public/img/coupon.svg" alt="bouton billet">
-                réservez un billet
+                Réservez un billet
             </a>
         </button>
 
@@ -107,15 +107,14 @@
                     <li>FONDATION CARTIER PASS : 18€ - 50€</li>
                     <li>MOINS DE 13 ANS : Gratuit</li>
                 </ul>
-                <button>
+                <button class="btn__about">
                     <a href="#">
-                        <img src="public/img/coupon.svg" alt="">
-                        réservez un billet
+                        En savoir plus
                     </a>
                 </button>
             </div>
         </section>
-        <section class="carouseul" x-data="{
+        <section class="carousel" x-data="{
             displayedImage: null,
         }">
             <h3>
@@ -155,6 +154,7 @@
                 <img src="public/img/gal1.webp" alt="minia"
                     @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
             </div>
+
         </section>
     </main>
 
