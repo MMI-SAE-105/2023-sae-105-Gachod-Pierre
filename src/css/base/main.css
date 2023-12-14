@@ -1,0 +1,152 @@
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+
+a {
+    text-decoration: none;
+    font-family: var(--btn-font-family);
+    font-weight: var(--btn-font-weight);
+    font-size: var(--btn-font-size);
+    letter-spacing: var(--btn-letter-spacing);
+    line-height: var(--btn-line-height);
+    font-style: var(--btn-font-style);
+    color: inherit;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote,
+figure,
+hr,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Réinitialiser les styles de la liste non ordonnée */
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: var(--h-1-font-family);
+    font-weight: var(--h-1-font-weight);
+    font-size: var(--h-1-font-size);
+    letter-spacing: var(--h-1-letter-spacing);
+    line-height: var(--h-1-line-height);
+    font-style: var(--h-1-font-style);
+    color: white;
+}
+
+h2 {
+    font-family: var(--h-2-font-family);
+    font-weight: var(--h-2-font-weight);
+    font-size: var(--h-2-font-size);
+    letter-spacing: var(--h-2-letter-spacing);
+    line-height: var(--h-2-line-height);
+    font-style: var(--h-2-font-style);
+    color: white;
+}
+
+h3 {
+    font-family: var(--h-3-font-family);
+    font-weight: var(--h-3-font-weight);
+    font-size: var(--h-3-font-size);
+    letter-spacing: var(--h-3-letter-spacing);
+    line-height: var(--h-3-line-height);
+    font-style: var(--h-3-font-style);
+    color: white;
+}
+
+p {
+    font-family: var(--b-1-font-family);
+    font-weight: var(--b-1-font-weight);
+    font-size: var(--b-1-font-size);
+    letter-spacing: var(--b-1-letter-spacing);
+    line-height: var(--b-1-line-height);
+    font-style: var(--b-1-font-style);
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: var(--variable-collection-noir);
+}
+
+main {
+    background-color: var(--variable-collection-noir);
+}
+
+footer {
+    background-color: rgb(24, 24, 24);
+}
+
+.btn__smtck {
+    background-color: var(--variable-collection-turquoise);
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.btn__tck {
+    background-color: var(--variable-collection-turquoise);
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.btn__about {
+    background-color: var(--variable-collection-turquoise);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+button a {
+    color: white;
+}
+
+button img {
+    vertical-align: middle;
+}

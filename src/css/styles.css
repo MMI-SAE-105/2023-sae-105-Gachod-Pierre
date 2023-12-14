@@ -10,5 +10,9 @@
 /* Variables */
 @import "utils/variables.css";
 
+@import "base/main.css";
+
 /* composants */
 @import "components/carousel.css";
+@import "components/header.css";
+
