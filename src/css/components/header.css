@@ -1,19 +1,17 @@
 header {
-    position: relative;
     display: flex;
-    padding-inline: 20px;
-    padding-block: 80px;
-    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-.header__fond {
-    position: absolute;
-    inset: 0;
-    object-fit: cover;
-    z-index: -1;
+.header__menu-icon {
+    padding-bottom: 5px;
 }
 
-.header__title {
-    text-align: center;
-    margin: auto;
+.header__logo {
+    padding-right: 90px;
 }
+
+
+
