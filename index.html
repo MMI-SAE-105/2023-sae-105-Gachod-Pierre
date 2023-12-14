@@ -122,7 +122,9 @@
             <div class="overlay"
             x-show="displayedImage"
             @click="displayedImage=null"
-            @keyup.escape.window="displayedImage = null"></div>
+            @keyup.escape.window="displayedImage = null">
+                <figure><img :src="displayedImage" alt="image affichée"></figure>
+            </div>
 
         </section>
     </main>
