@@ -60,7 +60,7 @@
                 <h2>
                     TADAO ANDO
                 </h2>
-                <img src="public/img/Tadao_Ando_2004 1.webp" alt="image de fond">
+                <img src="public/img/Tadao_Ando_2004 1.webp" class= "image__fond" alt="tadao ando" >
                 <button>
                     <a href="#">
                         En savoir plus
@@ -72,7 +72,7 @@
             <div>
                 <h3>EXPOSITION</h3>
                 <h2>EXPOSITION OFFICIELLE DE l'ARCHITECTE TADAO ANDO</h2>
-                <img src="public/img/fond2.webp" alt="image de fond">
+                <img src="public/img/fond2.webp" class= "image__fond" alt="exposition">
                 <p>Découvrez l'univers envoûtant de l'architecte renommé Tadao Ando au sein de notre exposition exclusive. Du 13 avril au
                 23 juin 2024, la Fondation Cartier à Paris ouvre ses portes pour révéler une rétrospective captivante de l'œuvre de cet
                 artiste visionnaire. Explorez les détails essentiels de cet événement incontournable, des horaires d'ouverture aux
@@ -125,7 +125,34 @@
             @keyup.escape.window="displayedImage = null">
                 <figure><img :src="displayedImage" alt="image affichée"></figure>
             </div>
-
+            <div class="miniatures">
+                <img src="public/img/gal1.webp" alt="minia"
+                @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
+            </div>
+            <div class="miniatures">
+                <img src="public/img/gal1.webp" alt="minia"
+                    @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
+            </div>
+            <div class="miniatures">
+                <img src="public/img/gal1.webp" alt="minia"
+                    @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
+            </div>
+            <div class="miniatures">
+                <img src="public/img/gal1.webp" alt="minia"
+                    @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
+            </div>
+            <div class="miniatures">
+                <img src="public/img/gal1.webp" alt="minia"
+                    @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
+            </div>
+            <div class="miniatures">
+                <img src="public/img/gal1.webp" alt="minia"
+                    @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
+            </div>
+            <div class="miniatures">
+                <img src="public/img/gal1.webp" alt="minia"
+                    @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
+            </div>
         </section>
     </main>
 
