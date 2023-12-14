@@ -9,3 +9,6 @@
 
 /* Variables */
 @import "utils/variables.css";
+
+/* composants */
+@import "components/carousel.css";
