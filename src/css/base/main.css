@@ -23,6 +23,22 @@ a {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+li {
+    display: flex;
+    color: var(--variable-collection-blanc);
+    --bdt-font-family: "Inter-Bold", Helvetica;
+    --bdt-font-weight: 700;
+    --bdt-font-size: 13px;
+    --bdt-letter-spacing: 0px;
+    --bdt-line-height: 120.00000476837158%;
+    --bdt-font-style: normal;
+    justify-content: space-between;
 }
 
 h1 {
@@ -155,4 +171,11 @@ button img {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 50px;
+}
+
+.section__img-sign {
+    position: relative;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
