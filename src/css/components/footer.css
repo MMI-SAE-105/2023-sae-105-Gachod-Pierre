@@ -1,0 +1,32 @@
+.footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #181717;
+}
+
+.footer__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.footer__title {
+    font-family: var(--bdt-font-family);
+    font-weight: var(--bdt-font-weight);
+    font-size: 20px;
+    letter-spacing: var(--bdt-letter-spacing);
+    line-height: var(--bdt-line-height);
+    font-style: var(--bdt-font-style);
+    color: white;
+}
+
+.footer__li {
+    font-family: var(--b-1-font-family);
+    font-weight: var(--b-1-font-weight);
+    font-size: var(--b-1-font-weight);
+    letter-spacing: var(--b-1-letter-spacing);
+    line-height: var(--b-1-line-height);
+    font-style: var(--b-1-font-style);
+    color: white;
+}

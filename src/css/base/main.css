@@ -31,13 +31,6 @@ ul {
 
 li {
     display: flex;
-    color: var(--variable-collection-blanc);
-    --bdt-font-family: "Inter-Bold", Helvetica;
-    --bdt-font-weight: 700;
-    --bdt-font-size: 13px;
-    --bdt-letter-spacing: 0px;
-    --bdt-line-height: 120.00000476837158%;
-    --bdt-font-style: normal;
     justify-content: space-between;
 }
 
@@ -105,10 +98,6 @@ img {
 
 body {
     background-color: var(--variable-collection-noir);
-}
-
-footer {
-    background-color:#181717;
 }
 
 .main {
