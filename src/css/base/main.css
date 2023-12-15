@@ -58,7 +58,17 @@ h3 {
     font-style: var(--h-3-font-style);
     color: white;
     padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-top: 6rem;
+}
+
+h3::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 1px;
+    background-color: var(--variable-collection-turquoise);
+    margin-bottom: 3px;
+    margin-right: 4px;
 }
 
 p {
@@ -69,6 +79,7 @@ p {
     line-height: var(--b-1-line-height);
     font-style: var(--b-1-font-style);
     color: white;
+    padding-bottom: 3rem;
 }
 
 img {
@@ -88,19 +99,7 @@ footer {
     margin: 20px;
 }
 
-.header__btn-smtck {
-    background-color: var(--variable-collection-turquoise);
-    border: none;
-    padding: 5px 15px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 50px;
-}
-
-.hero__btn {
+.hero__btn-bgtck {
     background-color: var(--variable-collection-turquoise);
     border: none;
     padding: 12px 32px;
@@ -110,15 +109,15 @@ footer {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 50px;
-    margin-top: 230px;
 }
 
-.btn__about {
-    background-color: var(--variable-collection-turquoise);
-    border: none;
+.section__btn-abt {
+    background-color: none;
+    border: 2px solid var(--variable-collection-blanc);
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
+    justify-content: center;
     font-size: px;
     margin: 4px 2px;
     cursor: pointer;
@@ -139,34 +138,21 @@ button img {
     vertical-align: middle;
 }
 
-
-.main__hero-imgfond {
-    z-index: -1;
-    position: absolute;
-    inset: 0;
-    object-fit: cover;
-    top: 0;
-}
-
-.main__hero-title {
-    z-index: 1;
-    text-align: center;
-    padding: 40px;
-    margin-top: 52px;
-}
-
-.main__hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
+.section__btn-abt {
     position: relative;
-    padding-bottom: 80px;
-    margin-left: -20px;
-    margin-right: -20px;
+    top: px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.main__hero-scroll {
-    margin-top: 70px;
+.header__btn {
+    background-color: var(--variable-collection-turquoise);
+    border: none;
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
 }
-

@@ -13,6 +13,8 @@
 @import "base/main.css";
 
 /* composants */
+@import "components/hero.css";
 @import "components/galerie.css";
 @import "components/header.css";
+
 

@@ -1,0 +1,30 @@
+.main__hero-imgfond {
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    top: 0;
+}
+
+.main__hero-title {
+    z-index: 1;
+    text-align: center;
+    padding: 40px;
+    margin-top: 52px;
+    margin-bottom: 320px;
+}
+
+.main__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 80px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.main__hero-scroll {
+    margin-top: 70px;
+}
