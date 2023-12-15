@@ -1,3 +1,9 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 button {
     background: none;
     border: none;
@@ -21,28 +27,7 @@ a {
 }
 
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-blockquote,
-figure,
-hr,
-dl,
-dt,
-dd {
-    margin: 0;
-    padding: 0;
-}
 
-/* Réinitialiser les styles de la liste non ordonnée */
 ul {
     list-style: none;
 }
@@ -92,16 +77,12 @@ img {
     height: auto;
 }
 
-header {
-    background-color: var(--variable-collection-noir);
-}
-
-main {
+body {
     background-color: var(--variable-collection-noir);
 }
 
 footer {
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(35, 31, 31);
 }
 
 .btn__smtck {
@@ -150,3 +131,18 @@ button a {
 button img {
     vertical-align: middle;
 }
+
+
+.hero__background {
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+}
+
+.main__hero-title {
+    z-index: 10;
+    text-align: center;
+    
+}
+
