@@ -9,9 +9,9 @@
 
 </head>
 <body>
-    <header>
-        <!-- <nav class="header__menu menu">
-            <ul class="menu__list">
+    <header class="header">
+        <!-- <nav class="header__nav">
+            <ul class="header__mnav__list">
                 <li class="menu__item"><a class="menu__link" href="#">Tadao Ando</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Oeuvres architecturales</a></li>
             </ul>
@@ -25,26 +25,38 @@
             <img src="public/img/TADAO.svg" alt="Tadao logo" class="header__logo-img" />
         </a>
         
-        <button class="btn__smtck">
+        <button class="header__btn header__btn-smtck">
             <a href="#">
-                <img src="public/img/coupon.svg" alt="">
+                <img src="public/img/coupon.svg" alt="sigle billet" class="btn__icon-tck">
                 Vôtre billet
             </a>
         </button>
     </header>
 
-    <main>
-        <img src="public/img/img_fond_1.webp" alt="fond" class="header__fond">
-        <section>
-            <article>
-                <h3>
+    <main class="main">
+        <div class="main__hero">
+            <h1 class="main__hero-title">
+                ÉVADEZ-VOUS EXPOSITION TADAO
+            </h1>
+            <img class="main__hero-imgfond" src="public/img/img_fond_1.webp" alt="fond">
+            <button class="hero__btn hero__btn-bgtck">
+                <a href="#">
+                    <img src="public/img/coupon.svg" alt="sigle billet">
+                    Réservez un billet
+                </a>
+                <a href="#"><img src="public/img/arrow.svg" alt="flèche"></a>
+            </button>
+        </div>
+        <section class="section">
+            <article class="section__article">
+                <h3 class="section__article--sep">
                     ARCHITECTE
                 </h3>
-                <h2>
+                <h2 class="main__section-title">
                     TADAO ANDO
                 </h2>
-                <img src="public/img/img_fond_2.webp" class= "image__fond" alt="tadao ando" >
-                <button>
+                <img src="public/img/img_fond_2.webp" class= "section__img-fond" alt="tadao ando" >
+                <button class="section__btn-abt">
                     <a href="#">
                         En savoir plus
                     </a>
@@ -53,9 +65,9 @@
         </section>
         <section>
             <div>
-                <h3>EXPOSITION</h3>
-                <h2>EXPOSITION OFFICIELLE DE l'ARCHITECTE TADAO ANDO</h2>
-                <img src="public/img/img_fond_3.webp" class= "image__fond" alt="exposition">
+                <h3 class="section__article--sep">EXPOSITION</h3>
+                <h2 class="main__section-title">EXPOSITION OFFICIELLE DE l'ARCHITECTE TADAO ANDO</h2>
+                <img src="public/img/img_fond_3.webp" class= "section__img-fond" alt="exposition">
                 <p>Découvrez l'univers envoûtant de l'architecte renommé Tadao Ando au sein de notre exposition exclusive. Du 13 avril au
                 23 juin 2024, la Fondation Cartier à Paris ouvre ses portes pour révéler une rétrospective captivante de l'œuvre de cet
                 artiste visionnaire. Explorez les détails essentiels de cet événement incontournable, des horaires d'ouverture aux
@@ -64,14 +76,14 @@
             </div>
             <div>
                 <h2>INFORMATIONS</h2>
-                <img src="public/img/pin-drop.svg" alt="sigle ping">
-                <p>Rejoignez-nous du 13 avril au 23 juin 2024 à la Fondation Cartier, 261 Bd Raspail, 75014 Paris, pour une immersion
+                <img src="public/img/pin-drop.svg" class= "section__img-sign" alt="sigle ping">
+                <p class="main__section-text">Rejoignez-nous du 13 avril au 23 juin 2024 à la Fondation Cartier, 261 Bd Raspail, 75014 Paris, pour une immersion
                 exceptionnelle dans l'univers de l'architecte Tadao Ando. Découvrez la magie de ses créations dans ce lieu emblématique,
                 au cœur de la scène artistique parisienne. Un rendez-vous à ne pas manquer pour les amateurs d'architecture et de beauté
                 créative.</p>
             </div>
             <div>
-                <img src="public/img/clock-alt-2.svg" alt="sigle horloge">
+                <img src="public/img/clock-alt-2.svg" class= "section__img-sign" alt="sigle horloge">
                 <p>L’exposition Tadao Ando est ravie de vous accueillir selon les plages horaires suivantes : </p>
                 <ul>
                     <li>tous les jours de 11h à 20h, sauf le lundi</li>
@@ -79,7 +91,7 @@
                 </ul>
             </div>
             <div>
-                <img src="public/img/primary.svg" alt="sigle coupon">
+                <img src="public/img/primary.svg" class= "section__img-sign" alt="sigle coupon">
                 <strong>TARIFS :</strong>
                 <ul>
                     <li>PLEIN TARIF : 11€</li>
@@ -139,20 +151,20 @@
         </section>
     </main>
 
-    <footer>
-        <div>
-            <a href="#"><img src="public/img/TADAO.svg" alt=""></a>
-            <a href="https://butmmi.thomasjeu.fr/#/"><img src="public/img/mmi.png" alt=""></a>
+    <footer class="footer">
+        <div class="footer__header">
+            <a class="footer__header-logo" href="#"><img src="public/img/TADAO.svg" alt=""></a>
+            <a class="footer__header-logo" href="https://butmmi.thomasjeu.fr/#/"><img src="public/img/mmi.png" alt=""></a>
         </div>
         <div>
-            <strong>Sections</strong>
+            <strong class="footer__title">Sections</strong>
             <ul>
                 <li>L'exposition</li>
                 <li>Tadao Ando</li>
                 <li>Oeuvres architecturales</li>
             </ul>
             <strong>Réseaux</strong>
-            <ul>
+            <ul class="footer__list">
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
