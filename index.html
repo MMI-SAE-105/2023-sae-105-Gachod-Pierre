@@ -10,14 +10,14 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav" x-show="menuIsOpen" x-transition.duration.800ms>
+        <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.duration.800ms>
             <ul class="header__mnav__list">
                 <li class="menu__item"><a class="menu__link" href="#">Tadao Ando</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Oeuvres architecturales</a></li>
             </ul>
         </nav>
 
-        <button class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+        <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
             <img src="public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
         </button>
         
