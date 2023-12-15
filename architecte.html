@@ -9,22 +9,26 @@
 </head>
 <body>
     <header class="header">
-        <!-- <nav class="header__menu menu">
-                <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="#">Tadao Ando</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Oeuvres architecturales</a></li>
-                </ul>
-            </nav> -->
+        <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.duration.800ms>
+            <ul class="header__nav-list">
+                <li class="menu__item"><a class="menu__link" href="#">Tadao Ando</a></li>
+                <p class="header__nav-desc">L’architecte</p>
+                <hr class="header__hr">
+                <li class="menu__item"><a class="menu__link" href="#">Oeuvres architecturales</a></li>
+                <p class="header__nav-desc">Les oeuvres conçues par Tadao Ando</p>
+                <hr class="header__hr">
+            </ul>
+        </nav>
     
-        <button class="header__menu-btn">
-            <img src="public/img/menu-open.svg" alt="Icone menu" class="btn__icon-menu" />
+        <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+            <img src="public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
         </button>
     
         <a href="#" class="header__logo">
             <img src="public/img/TADAO.svg" alt="Tadao logo" class="header__logo-img" />
         </a>
     
-        <button class="header__btn header__btn-smtck">
+        <button class="header__btn">
             <a href="#">
                 <img src="public/img/coupon.svg" alt="sigle billet" class="btn__icon-tck">
                 Vôtre billet

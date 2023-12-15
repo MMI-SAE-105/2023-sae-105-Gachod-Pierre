@@ -22,6 +22,34 @@ header {
     background-color: black;
     display: grid;
     z-index: 9;
+    padding: 20px;
+}
+
+.menu__link {
+    font-family: var(--m-1-font-family);
+    font-weight: var(--m-1-font-weight);
+    font-size: var(--m-1-font-size);
+    letter-spacing: var(--m-1-letter-spacing);
+    line-height: var(--m-1-line-height);
+    font-style: var(--m-1-font-style);
+    color: white;
+}
+
+.header__nav-desc {
+    font-family: var(--m-1-font-family);
+    font-weight: var(--m-2-font-weight);
+    font-size: var(--m-2-font-size);
+    letter-spacing: var(--m-2-letter-spacing);
+    line-height: var(--m-2-line-height);
+    font-style: var(--m-2-font-style);
+    color: var(--variable-collection-gold);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.header__hr {
+    margin-bottom: 50px;
 }
 
 .noscroll,

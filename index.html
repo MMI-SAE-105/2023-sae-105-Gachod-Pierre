@@ -11,9 +11,13 @@
 <body>
     <header class="header">
         <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.duration.800ms>
-            <ul class="header__mnav__list">
+            <ul class="header__nav-list">
                 <li class="menu__item"><a class="menu__link" href="#">Tadao Ando</a></li>
+                <p class="header__nav-desc">L’architecte</p>
+                <hr class="header__hr">
                 <li class="menu__item"><a class="menu__link" href="#">Oeuvres architecturales</a></li>
+                <p class="header__nav-desc">Les oeuvres conçues par Tadao Ando</p>
+                <hr class="header__hr">
             </ul>
         </nav>
 
@@ -71,7 +75,7 @@
             <div>
                 <h3 class="section__article--sep">EXPOSITION</h3>
                 <h2 class="main__section-title">EXPOSITION OFFICIELLE DE l'ARCHITECTE TADAO ANDO</h2>
-                <img src="public/img/img_fond_3.webp" class= "section__img-sign" alt="exposition">
+                <img src="public/img/img_fond_3.webp" class= "section__img-fond" alt="exposition">
                 <p>Découvrez l'univers envoûtant de l'architecte renommé Tadao Ando au sein de notre exposition exclusive. Du 13 avril au
                 23 juin 2024, la Fondation Cartier à Paris ouvre ses portes pour révéler une rétrospective captivante de l'œuvre de cet
                 artiste visionnaire. Explorez les détails essentiels de cet événement incontournable, des horaires d'ouverture aux
@@ -160,6 +164,11 @@
                         @click="displayedImage = 'public/img/Suntory_museum_osaka01_1994.webp'">
                 </div>
             </div>
+            <button class="section__btn-abt">
+                <a href="#">
+                    En savoir plus
+                </a>
+            </button>
         </section>
     </main>
 
