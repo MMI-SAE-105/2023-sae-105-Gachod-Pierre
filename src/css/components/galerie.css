@@ -1,4 +1,14 @@
-/* .overlay {
+.galerie {
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -40,14 +50,10 @@
 .miniatures {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 1rem;
-    justify-content: center;
-    gap: 10px;
-    max-width: 500px;
-    margin: 0 auto;
 }
 
 .miniatures img {
+    width: 100%;
+    height: auto;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-} */
+}

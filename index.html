@@ -107,47 +107,54 @@
                 </button>
             </div>
         </section>
-        <section class="carousel" x-data="{
-            displayedImage: null,
-        }">
-            <h3>
+        <section class="section__galerie">
+            <h3 class="galerie__title">
                 OEUVRES
             </h3>
-            <div class="overlay"
-            x-show="displayedImage"
-            @click="displayedImage=null"
-            @keyup.escape.window="displayedImage = null">
-                <figure><img :src="displayedImage" alt="image affichée"></figure>
+            <h2 class="section__galerie-title">
+                PLONGEZ AU COEUR DE L'EXPOSITION
+            </h2>
+            <div class="galerie" x-data="{
+                        displayedImage: null,
+                        isEnlarged: false,
+                    }">
+                <div class="overlay" x-show="displayedImage" @click="displayedImage=null"
+                    @keyup.escape.window="displayedImage = null">
+                    <figure><img :src="displayedImage" alt="image affichée"></figure>
+                </div>
+                <div class="miniatures">
+                    <img src="public/img/Church_of_Light_1989.webp" alt="minia"
+                        @click="displayedImage = 'public/img/Church_of_Light_1989.webp'">
+                </div>
+                <div class="miniatures">
+                    <img src="public/img/Himeji_City_Museum_of_Literature01s3872_1989.webp" alt="minia"
+                        @click="displayedImage = 'public/img/Himeji_City_Museum_of_Literature01s3872_1989.webp'">
+                </div>
+                <div class="miniatures">
+                    <img src="public/img/Shikokumura_gallery03s3200_2002.webp" alt="minia"
+                        @click="displayedImage = 'public/img/Shikokumura_gallery03s3200_2002.webp'">
+                </div>
+                <div class="miniatures">
+                    <img src="public/img/Pulitzerfoundation_2001.webp" alt="minia"
+                        @click="displayedImage = 'public/img/Pulitzerfoundation_2001.webp'">
+                </div>
+                <div class="miniatures">
+                    <img src="public/img/Langen_Foundation_Neuss_2004.webp" alt="minia"
+                        @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
+                </div>
+                <div class="miniatures">
+                    <img src="public/img/Honpuku_Water_Temple_1991.webp" alt="minia"
+                        @click="displayedImage = 'public/img/Honpuku_Water_Temple_1991.webp'">
+                </div>
+                <div class="miniatures">
+                    <img src="public/img/Rokko_Mount_Chapel_Tadao_Ando_1986.webp" alt="minia"
+                        @click="displayedImage = 'public/img/Rokko_Mount_Chapel_Tadao_Ando_1986.webp'">
+                </div>
+                <div class="miniatures">
+                    <img src="public/img/Suntory_museum_osaka01_1994.webp" alt="minia"
+                        @click="displayedImage = 'public/img/Suntory_museum_osaka01_1994.webp'">
+                </div>
             </div>
-            <div class="miniatures">
-                <img src="public/img/gal1.webp" alt="minia"
-                @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
-            </div>
-            <div class="miniatures">
-                <img src="public/img/gal1.webp" alt="minia"
-                    @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
-            </div>
-            <div class="miniatures">
-                <img src="public/img/gal1.webp" alt="minia"
-                    @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
-            </div>
-            <div class="miniatures">
-                <img src="public/img/gal1.webp" alt="minia"
-                    @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
-            </div>
-            <div class="miniatures">
-                <img src="public/img/gal1.webp" alt="minia"
-                    @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
-            </div>
-            <div class="miniatures">
-                <img src="public/img/gal1.webp" alt="minia"
-                    @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
-            </div>
-            <div class="miniatures">
-                <img src="public/img/gal1.webp" alt="minia"
-                    @click="displayedImage = 'public/img/Langen_Foundation_Neuss_2004.webp'">
-            </div>
-
         </section>
     </main>
 
