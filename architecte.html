@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,7 +70,54 @@
         <section class="main__section">
             <h2 class="main__section-title">CHRONOLOGIE</h2>
             <img class="main__section-sep" src="public/img/bgtrait.svg" alt="séparation">
-            <!-- carousel -->
+
+            <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
+                <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
+                <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
+                <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.0ms.passive="
+                hrefCourant = '#'+
+                                    [...$refs.parent.children]
+                                    .find(e=>e.getBoundingClientRect().x>=0)
+                                    .id">
+                            <div id="ecran-1" class="carrousel_ecran">
+                                <figure>
+                                    <img src="https://picsum.photos/seed/1/1000/300" alt="image ecran 1">
+                                    <figcaption>Ecran 1</figcaption>
+                                </figure>
+                            </div>
+                            <div id="ecran-2" class="carrousel_ecran">
+                                <figure>
+                                    <img src="https://picsum.photos/seed/2/1000/300" alt="image ecran 2">
+                                    <figcaption>Ecran 2</figcaption>
+                                </figure>
+                            </div>
+                            <div id="ecran-3" class="carrousel_ecran">
+                                <figure>
+                                    <img src="https://picsum.photos/seed/3/1000/300" alt="image ecran 3">
+                                    <figcaption>Ecran 3</figcaption>
+                                </figure>
+                            </div>
+                            <div id="ecran-4" class="carrousel_ecran">
+                                <figure>
+                                    <img src="https://picsum.photos/seed/4/1000/300" alt="image ecran 4">
+                                    <figcaption>Ecran 4</figcaption>
+                                </figure>
+                            </div>
+                            <div id="ecran-5" class="carrousel_ecran">
+                                <figure>
+                                    <img src="https://picsum.photos/seed/5/1000/300" alt="image ecran 5">
+                                    <figcaption>Ecran 5</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <ul class="caroussel_liste-liens">
+                            <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}"><button class="btn">ecran 1</button></a></li>
+                            <li><a href="#ecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-2'}"><button class="btn">ecran 2</button></a></li>
+                            <li><a href="#ecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-3'}"><button class="btn">ecran 3</button></a></li>
+                            <li><a href="#ecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-4'}"><button class="btn">ecran 4</button></a></li>
+                            <li><a href="#ecran-5" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-5'}"><button class="btn">ecran 5</button></a></li>
+                        </ul>
+                </div>
         </section>
     </main>
 
@@ -84,9 +131,9 @@
         <div class="footer__list">
             <ul>
                 <strong class="footer__title">Sections</strong>
-                <li class="footer__li">L'exposition</li>
                 <li class="footer__li">Tadao Ando</li>
                 <li class="footer__li">Oeuvres architecturales</li>
+                <li class="footer__li">Contact</li>
             </ul>
             <ul class="footer__list">
                 <strong class="footer__title">Réseaux</strong>
