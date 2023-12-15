@@ -6,12 +6,30 @@ header {
 }
 
 .header__menu-icon {
+    position: relative;
     padding-bottom: 5px;
+    z-index: 10;
 }
 
 .header__logo {
     padding-right: 90px;
 }
 
+
+.header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: grid;
+    place-content: center;
+}
+
+.noscroll,
+.noscroll body {
+    overflow: hidden;
+}
 
 
