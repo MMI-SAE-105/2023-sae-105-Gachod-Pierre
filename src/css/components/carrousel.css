@@ -1,0 +1,163 @@
+* {
+    box-sizing: content-box;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carrousel_parent-ecrans {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    box-shadow: 0px 0px 2rem 1px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+}
+
+.carrousel_ecran {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    margin: 0;
+}
+
+/* .carrousel_ecran figcaption {
+    position: relative;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    white-space: nowrap;
+} */
+
+.carrousel_ecran figure {
+    margin: 0;
+    display: flex;
+}
+
+
+.carrousel {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.carrousel_btn {
+    position: absolute;
+    display: flex;
+    bottom: 4.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    border: none;
+    place-content: center;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 1rem 1px rgba(255, 255, 255, 1);
+}
+
+
+.carrousel_btn-avant {
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.carrousel_btn-apres {
+    right: 45%;
+    transform: translateX(50%);
+}
+
+.carrousel_btn:hover {
+    background-color: rgb(0, 0, 0, 0.75);
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 0.5vh;
+    font-size: 2vh;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: black;
+    opacity: 0.5;
+    border-radius: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 0px 0.5rem 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    color: #000000;
+    opacity: 1;
+    font-weight: bold;
+    box-shadow: 0px 0px 0.5rem 1px rgba(0, 0, 0, 0.5);
+}
+
+.caroussel_lien.actif .btn {
+    opacity: 1;
+    font-weight: bold;
+    box-shadow: 0px 0px 0.5rem 1px rgba(0, 0, 0, 0.5);
+}
+
+.caroussel_liste-liens {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 0;
+    list-style: none;
+    gap: 2rem;
+}
+
+.caroussel_lien.actif {
+    /* font-weight: bold;
+    transition: all 0.5s;
+    width: 200px;
+    height: 100px;
+    opacity: 1; */
+}
+
+.caroussel_lien {
+    /* text-decoration: none;
+    color: #000;
+    padding : 10px 30px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    transition: 0.5s;
+    opacity: 0.6;
+    width: 20vw;
+    height: 10vh;
+    white-space: nowrap;
+    box-shadow: 0px 0px 0.5rem 1px rgba(0, 0, 0, 0.5); */
+}
+
+.caroussel_lien:hover {
+    /* font-weight: bold;
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 1);
+    width: 200px;
+    height: 100px;
+    opacity: 1;*/
+}
