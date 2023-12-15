@@ -17,13 +17,6 @@ button {
 
 a {
     text-decoration: none;
-    font-family: var(--btn-font-family);
-    font-weight: var(--btn-font-weight);
-    font-size: var(--btn-font-size);
-    letter-spacing: var(--btn-letter-spacing);
-    line-height: var(--btn-line-height);
-    font-style: var(--btn-font-style);
-    color: inherit;
 }
 
 
@@ -40,6 +33,8 @@ h1 {
     line-height: var(--h-1-line-height);
     font-style: var(--h-1-font-style);
     color: white;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 h2 {
@@ -50,6 +45,8 @@ h2 {
     line-height: var(--h-2-line-height);
     font-style: var(--h-2-font-style);
     color: white;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 h3 {
@@ -60,6 +57,8 @@ h3 {
     line-height: var(--h-3-line-height);
     font-style: var(--h-3-font-style);
     color: white;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 p {
@@ -82,13 +81,16 @@ body {
 }
 
 footer {
-    background-color: rgb(35, 31, 31);
+    background-color:#181717;
 }
 
-.btn__smtck {
+.main {
+    margin: 20px;
+}
+
+.header__btn-smtck {
     background-color: var(--variable-collection-turquoise);
     border: none;
-    color: white;
     padding: 5px 15px;
     text-align: center;
     display: inline-block;
@@ -98,33 +100,38 @@ footer {
     border-radius: 50px;
 }
 
-.btn__tck {
+.hero__btn {
     background-color: var(--variable-collection-turquoise);
     border: none;
-    color: white;
     padding: 12px 32px;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
+    font-size: 19px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 50px;
+    margin-top: 230px;
 }
 
 .btn__about {
     background-color: var(--variable-collection-turquoise);
     border: none;
-    color: white;
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
+    font-size: px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 50px;
 }
 
 button a {
+    font-family: var(--btn-font-family);
+    color: white;
+}
+
+.header__btn-smtck a {
+    font-family: var(--smt-font-family);
     color: white;
 }
 
@@ -133,16 +140,33 @@ button img {
 }
 
 
-.hero__background {
+.main__hero-imgfond {
     z-index: -1;
     position: absolute;
     inset: 0;
     object-fit: cover;
+    top: 0;
 }
 
 .main__hero-title {
-    z-index: 10;
+    z-index: 1;
     text-align: center;
-    
+    padding: 40px;
+    margin-top: 52px;
+}
+
+.main__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 80px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.main__hero-scroll {
+    margin-top: 70px;
 }
 
